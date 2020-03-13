@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        Daily Math Excersises
+    </header>
+    <section>
+        <H1>How Good Is Your Math Skills</H1>
+        <P> Click The Button To Test Your Math Skills<br> Gets Harder As Game Goes On </P>
+    </section>
+
+    <section class="getWhooped">
+
+        <button onclick="myFunction()">Math Trainer</button>
+
+        </button>
+    </section>
+    <script type="text/javascript">
+
+    for (tries = 2; tries >= 0; tries--) {
+    let User = prompt("Enter your username:");
+    let Pass = prompt("Enter your password:");
+    if (User === "giselle" && Pass === "kelly") {
+    alert("Welcome " + User);
+    break;
+
+    } else if (tries == 0) {
+    alert("You don't have any attempts left. Your account is now blocked");
+    
+    } else {
+    alert("Incorrect username and/or password. You have " + tries + " attempt(s) left.");
+    }
+    }
+    function myFunction() {
+    alert('Welcome to your daily math trainer!');
+
+
+
+
+    var yourAge = prompt('Please Enter Your Age');
+    alert('Now lets test your math skills');
+
+    var easyMath = prompt('25+17=');
+    if (easyMath === '42') {
+
+    alert("Correct \n The answer is " + easyMath);
+    }
+    else {
+    alert("Sorry \n the answer is not " + easyMath);
+    }
+    alert('Ok lets step it up a notch');
+
+    var mediumMath = prompt('17x5=?');
+    if (mediumMath === '85') {
+    alert('now subtract 20');
+    alert('now divide by 5')
+    alert('now add 7')
+
+    }
+    else {
+    alert('try again')
+    }
+    var sameProblem = prompt('divided by 5=');
+    if (sameProblem === '4') {
+    alert('Congratulations! the answer is ' + sameProblem + ' You are really smart');
+
+
+    }
+    else {
+    alert('Sorry ' + sameProblem + ' Is not the correct answer')
+
+    }
+
+    var howsMemory = prompt('what was the first number you entered?')
+    if (howsMemory === yourAge) {
+    alert('Wow your memory is awesome');
+    }
+    else {
+    alert('Don\'t remember your age?');
+    }}
+
+    </script>
+</body>
+
+</html>
